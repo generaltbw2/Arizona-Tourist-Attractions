@@ -464,6 +464,7 @@
             this.Controls.Add(this.arizonaLocationBindingNavigator);
             this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.Text = "Arizona Tourist Attractions";
             this.Load += new System.EventHandler(this.Form1_Load);

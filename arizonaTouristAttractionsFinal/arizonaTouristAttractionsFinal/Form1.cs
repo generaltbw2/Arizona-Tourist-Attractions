@@ -63,7 +63,7 @@ namespace arizonaTouristAttractionsFinal
 
         private void openFileDialog1_FileOk_1(object sender, CancelEventArgs e)
         {
-            locationPictureTextBox.Text = openFileDialog1.FileName;
+            locationPictureTextBox.Text = @"..\..\Images\" + openFileDialog1.SafeFileName;
             pictureChange();
         }
 
