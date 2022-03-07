@@ -138,7 +138,7 @@
             // 
             locationPictureLabel.AutoSize = true;
             locationPictureLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            locationPictureLabel.Location = new System.Drawing.Point(466, 193);
+            locationPictureLabel.Location = new System.Drawing.Point(548, 263);
             locationPictureLabel.Name = "locationPictureLabel";
             locationPictureLabel.Size = new System.Drawing.Size(62, 20);
             locationPictureLabel.TabIndex = 11;
@@ -158,7 +158,7 @@
             // 
             descriptionLabel.AutoSize = true;
             descriptionLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            descriptionLabel.Location = new System.Drawing.Point(435, 217);
+            descriptionLabel.Location = new System.Drawing.Point(435, 197);
             descriptionLabel.Name = "descriptionLabel";
             descriptionLabel.Size = new System.Drawing.Size(93, 20);
             descriptionLabel.TabIndex = 15;
@@ -357,7 +357,7 @@
             // locationPictureTextBox
             // 
             this.locationPictureTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.arizonaLocationBindingSource, "locationPicture", true));
-            this.locationPictureTextBox.Location = new System.Drawing.Point(528, 193);
+            this.locationPictureTextBox.Location = new System.Drawing.Point(528, 240);
             this.locationPictureTextBox.Name = "locationPictureTextBox";
             this.locationPictureTextBox.Size = new System.Drawing.Size(180, 20);
             this.locationPictureTextBox.TabIndex = 12;
@@ -373,10 +373,10 @@
             // descriptionTextBox
             // 
             this.descriptionTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.arizonaLocationBindingSource, "Description", true));
-            this.descriptionTextBox.Location = new System.Drawing.Point(528, 219);
+            this.descriptionTextBox.Location = new System.Drawing.Point(528, 197);
             this.descriptionTextBox.Multiline = true;
             this.descriptionTextBox.Name = "descriptionTextBox";
-            this.descriptionTextBox.Size = new System.Drawing.Size(180, 219);
+            this.descriptionTextBox.Size = new System.Drawing.Size(180, 241);
             this.descriptionTextBox.TabIndex = 16;
             // 
             // resultsComboBox
@@ -392,6 +392,7 @@
             this.searchTextBox.Location = new System.Drawing.Point(12, 78);
             this.searchTextBox.Multiline = true;
             this.searchTextBox.Name = "searchTextBox";
+            this.searchTextBox.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.searchTextBox.Size = new System.Drawing.Size(414, 74);
             this.searchTextBox.TabIndex = 18;
             // 
@@ -461,6 +462,8 @@
             this.Controls.Add(locationNameLabel);
             this.Controls.Add(this.locationNameTextBox);
             this.Controls.Add(this.arizonaLocationBindingNavigator);
+            this.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Name = "Form1";
             this.Text = "Arizona Tourist Attractions";
             this.Load += new System.EventHandler(this.Form1_Load);
