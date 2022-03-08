@@ -17,7 +17,7 @@ namespace arizonaTouristAttractionsFinal
         {
             Thread t = new Thread(new ThreadStart(StartForm));
             t.Start();
-            Thread.Sleep(1000);
+            Thread.Sleep(300);
             InitializeComponent();
             t.Abort();
         }
