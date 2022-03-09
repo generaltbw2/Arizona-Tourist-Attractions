@@ -72,6 +72,7 @@ namespace arizonaTouristAttractionsFinal
             // connection string  
             try
             {
+                resultsComboBox.Items.Clear();
                 // Query database
                 var contactDetails =
                    from c in arizona1DataSet.arizonaLocation
@@ -81,6 +82,12 @@ namespace arizonaTouristAttractionsFinal
                 {
                     resultsComboBox.Items.Add(item.locationName);
                 }
+                arizonaLocationBindingSource.DataSource = contactDetails.AsDataView();
+                try
+                {
+                    pictureChange();
+                }
+                catch {}
                 //arizonaLocationDataGridView.DataSource = contactDetails.AsDataView();
             }
             catch (Exception ex)
@@ -109,9 +116,9 @@ namespace arizonaTouristAttractionsFinal
             //resultsComboBox.Items.Clear();
         }
 
-        private void resetButton_Click(object sender, EventArgs e)
+        private void label1_Click(object sender, EventArgs e)
         {
-            
+
         }
     }
 }

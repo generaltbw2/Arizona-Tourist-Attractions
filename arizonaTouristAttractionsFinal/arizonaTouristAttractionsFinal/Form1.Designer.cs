@@ -38,6 +38,8 @@
             System.Windows.Forms.Label locationLabel;
             System.Windows.Forms.Label descriptionLabel;
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.Windows.Forms.Label searchLabel;
+            System.Windows.Forms.Label resultsLabel;
             this.arizona1DataSet = new arizonaTouristAttractionsFinal.arizona1DataSet();
             this.arizonaLocationBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.arizonaLocationTableAdapter = new arizonaTouristAttractionsFinal.arizona1DataSetTableAdapters.arizonaLocationTableAdapter();
@@ -77,6 +79,8 @@
             locationPictureLabel = new System.Windows.Forms.Label();
             locationLabel = new System.Windows.Forms.Label();
             descriptionLabel = new System.Windows.Forms.Label();
+            searchLabel = new System.Windows.Forms.Label();
+            resultsLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.arizona1DataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.arizonaLocationBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.arizonaLocationBindingNavigator)).BeginInit();
@@ -87,50 +91,50 @@
             // locationNameLabel
             // 
             locationNameLabel.AutoSize = true;
-            locationNameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            locationNameLabel.Location = new System.Drawing.Point(473, 37);
+            locationNameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            locationNameLabel.Location = new System.Drawing.Point(491, 33);
             locationNameLabel.Name = "locationNameLabel";
-            locationNameLabel.Size = new System.Drawing.Size(55, 20);
+            locationNameLabel.Size = new System.Drawing.Size(79, 25);
             locationNameLabel.TabIndex = 1;
             locationNameLabel.Text = "Name:";
             // 
             // countyLabel
             // 
             countyLabel.AutoSize = true;
-            countyLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            countyLabel.Location = new System.Drawing.Point(465, 63);
+            countyLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            countyLabel.Location = new System.Drawing.Point(477, 56);
             countyLabel.Name = "countyLabel";
-            countyLabel.Size = new System.Drawing.Size(63, 20);
+            countyLabel.Size = new System.Drawing.Size(93, 25);
             countyLabel.TabIndex = 3;
             countyLabel.Text = "County:";
             // 
             // cityLabel
             // 
             cityLabel.AutoSize = true;
-            cityLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            cityLabel.Location = new System.Drawing.Point(489, 87);
+            cityLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            cityLabel.Location = new System.Drawing.Point(510, 81);
             cityLabel.Name = "cityLabel";
-            cityLabel.Size = new System.Drawing.Size(39, 20);
+            cityLabel.Size = new System.Drawing.Size(60, 25);
             cityLabel.TabIndex = 5;
             cityLabel.Text = "City:";
             // 
             // categoryLabel
             // 
             categoryLabel.AutoSize = true;
-            categoryLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            categoryLabel.Location = new System.Drawing.Point(451, 115);
+            categoryLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            categoryLabel.Location = new System.Drawing.Point(456, 106);
             categoryLabel.Name = "categoryLabel";
-            categoryLabel.Size = new System.Drawing.Size(77, 20);
+            categoryLabel.Size = new System.Drawing.Size(114, 25);
             categoryLabel.TabIndex = 7;
             categoryLabel.Text = "Category:";
             // 
             // ratingLabel
             // 
             ratingLabel.AutoSize = true;
-            ratingLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            ratingLabel.Location = new System.Drawing.Point(468, 141);
+            ratingLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            ratingLabel.Location = new System.Drawing.Point(483, 131);
             ratingLabel.Name = "ratingLabel";
-            ratingLabel.Size = new System.Drawing.Size(60, 20);
+            ratingLabel.Size = new System.Drawing.Size(87, 25);
             ratingLabel.TabIndex = 9;
             ratingLabel.Text = "Rating:";
             // 
@@ -138,7 +142,7 @@
             // 
             locationPictureLabel.AutoSize = true;
             locationPictureLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            locationPictureLabel.Location = new System.Drawing.Point(548, 263);
+            locationPictureLabel.Location = new System.Drawing.Point(611, 259);
             locationPictureLabel.Name = "locationPictureLabel";
             locationPictureLabel.Size = new System.Drawing.Size(62, 20);
             locationPictureLabel.TabIndex = 11;
@@ -147,20 +151,20 @@
             // locationLabel
             // 
             locationLabel.AutoSize = true;
-            locationLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            locationLabel.Location = new System.Drawing.Point(454, 167);
+            locationLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            locationLabel.Location = new System.Drawing.Point(461, 156);
             locationLabel.Name = "locationLabel";
-            locationLabel.Size = new System.Drawing.Size(74, 20);
+            locationLabel.Size = new System.Drawing.Size(109, 25);
             locationLabel.TabIndex = 13;
             locationLabel.Text = "Location:";
             // 
             // descriptionLabel
             // 
             descriptionLabel.AutoSize = true;
-            descriptionLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            descriptionLabel.Location = new System.Drawing.Point(435, 197);
+            descriptionLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            descriptionLabel.Location = new System.Drawing.Point(432, 181);
             descriptionLabel.Name = "descriptionLabel";
-            descriptionLabel.Size = new System.Drawing.Size(93, 20);
+            descriptionLabel.Size = new System.Drawing.Size(138, 25);
             descriptionLabel.TabIndex = 15;
             descriptionLabel.Text = "Description:";
             // 
@@ -210,7 +214,7 @@
             this.arizonaLocationBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.arizonaLocationBindingNavigator.Name = "arizonaLocationBindingNavigator";
             this.arizonaLocationBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.arizonaLocationBindingNavigator.Size = new System.Drawing.Size(724, 25);
+            this.arizonaLocationBindingNavigator.Size = new System.Drawing.Size(768, 25);
             this.arizonaLocationBindingNavigator.TabIndex = 0;
             this.arizonaLocationBindingNavigator.Text = "bindingNavigator1";
             this.arizonaLocationBindingNavigator.Click += new System.EventHandler(this.arizonaLocationBindingNavigator_Click);
@@ -317,63 +321,70 @@
             // locationNameTextBox
             // 
             this.locationNameTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.arizonaLocationBindingSource, "locationName", true));
-            this.locationNameTextBox.Location = new System.Drawing.Point(528, 37);
+            this.locationNameTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.locationNameTextBox.Location = new System.Drawing.Point(576, 35);
             this.locationNameTextBox.Name = "locationNameTextBox";
-            this.locationNameTextBox.Size = new System.Drawing.Size(180, 20);
+            this.locationNameTextBox.Size = new System.Drawing.Size(180, 22);
             this.locationNameTextBox.TabIndex = 2;
             // 
             // countyTextBox
             // 
             this.countyTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.arizonaLocationBindingSource, "County", true));
-            this.countyTextBox.Location = new System.Drawing.Point(528, 63);
+            this.countyTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.countyTextBox.Location = new System.Drawing.Point(576, 59);
             this.countyTextBox.Name = "countyTextBox";
-            this.countyTextBox.Size = new System.Drawing.Size(180, 20);
+            this.countyTextBox.Size = new System.Drawing.Size(180, 22);
             this.countyTextBox.TabIndex = 4;
             // 
             // cityTextBox
             // 
             this.cityTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.arizonaLocationBindingSource, "City", true));
-            this.cityTextBox.Location = new System.Drawing.Point(528, 89);
+            this.cityTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cityTextBox.Location = new System.Drawing.Point(576, 84);
             this.cityTextBox.Name = "cityTextBox";
-            this.cityTextBox.Size = new System.Drawing.Size(180, 20);
+            this.cityTextBox.Size = new System.Drawing.Size(180, 22);
             this.cityTextBox.TabIndex = 6;
             // 
             // categoryTextBox
             // 
             this.categoryTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.arizonaLocationBindingSource, "Category", true));
-            this.categoryTextBox.Location = new System.Drawing.Point(528, 115);
+            this.categoryTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.categoryTextBox.Location = new System.Drawing.Point(576, 109);
             this.categoryTextBox.Name = "categoryTextBox";
-            this.categoryTextBox.Size = new System.Drawing.Size(180, 20);
+            this.categoryTextBox.Size = new System.Drawing.Size(180, 22);
             this.categoryTextBox.TabIndex = 8;
             // 
             // ratingTextBox
             // 
             this.ratingTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.arizonaLocationBindingSource, "Rating", true));
-            this.ratingTextBox.Location = new System.Drawing.Point(528, 141);
+            this.ratingTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ratingTextBox.Location = new System.Drawing.Point(576, 134);
             this.ratingTextBox.Name = "ratingTextBox";
-            this.ratingTextBox.Size = new System.Drawing.Size(180, 20);
+            this.ratingTextBox.Size = new System.Drawing.Size(180, 22);
             this.ratingTextBox.TabIndex = 10;
             // 
             // locationPictureTextBox
             // 
             this.locationPictureTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.arizonaLocationBindingSource, "locationPicture", true));
-            this.locationPictureTextBox.Location = new System.Drawing.Point(528, 240);
+            this.locationPictureTextBox.Location = new System.Drawing.Point(591, 236);
             this.locationPictureTextBox.Name = "locationPictureTextBox";
-            this.locationPictureTextBox.Size = new System.Drawing.Size(180, 20);
+            this.locationPictureTextBox.Size = new System.Drawing.Size(119, 20);
             this.locationPictureTextBox.TabIndex = 12;
             // 
             // locationTextBox
             // 
             this.locationTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.arizonaLocationBindingSource, "Location", true));
-            this.locationTextBox.Location = new System.Drawing.Point(528, 167);
+            this.locationTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.locationTextBox.Location = new System.Drawing.Point(576, 159);
             this.locationTextBox.Name = "locationTextBox";
-            this.locationTextBox.Size = new System.Drawing.Size(180, 20);
+            this.locationTextBox.Size = new System.Drawing.Size(180, 22);
             this.locationTextBox.TabIndex = 14;
             // 
             // descriptionTextBox
             // 
             this.descriptionTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.arizonaLocationBindingSource, "Description", true));
-            this.descriptionTextBox.Location = new System.Drawing.Point(528, 197);
+            this.descriptionTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.descriptionTextBox.Location = new System.Drawing.Point(576, 185);
             this.descriptionTextBox.Multiline = true;
             this.descriptionTextBox.Name = "descriptionTextBox";
             this.descriptionTextBox.Size = new System.Drawing.Size(180, 241);
@@ -382,19 +393,20 @@
             // resultsComboBox
             // 
             this.resultsComboBox.FormattingEnabled = true;
-            this.resultsComboBox.Location = new System.Drawing.Point(12, 158);
+            this.resultsComboBox.Location = new System.Drawing.Point(111, 158);
             this.resultsComboBox.Name = "resultsComboBox";
-            this.resultsComboBox.Size = new System.Drawing.Size(414, 21);
+            this.resultsComboBox.Size = new System.Drawing.Size(315, 21);
             this.resultsComboBox.TabIndex = 17;
             // 
             // searchTextBox
             // 
-            this.searchTextBox.Location = new System.Drawing.Point(12, 78);
+            this.searchTextBox.Location = new System.Drawing.Point(111, 81);
             this.searchTextBox.Multiline = true;
             this.searchTextBox.Name = "searchTextBox";
             this.searchTextBox.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.searchTextBox.Size = new System.Drawing.Size(414, 74);
+            this.searchTextBox.Size = new System.Drawing.Size(315, 71);
             this.searchTextBox.TabIndex = 18;
+            this.searchTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // pictureBox1
             // 
@@ -433,13 +445,36 @@
     "ctionsFinal\\Images";
             this.openFileDialog1.FileOk += new System.ComponentModel.CancelEventHandler(this.openFileDialog1_FileOk_1);
             // 
+            // searchLabel
+            // 
+            searchLabel.AutoSize = true;
+            searchLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            searchLabel.Location = new System.Drawing.Point(12, 105);
+            searchLabel.Name = "searchLabel";
+            searchLabel.Size = new System.Drawing.Size(93, 25);
+            searchLabel.TabIndex = 22;
+            searchLabel.Text = "Search:";
+            searchLabel.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // resultsLabel
+            // 
+            resultsLabel.AutoSize = true;
+            resultsLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            resultsLabel.Location = new System.Drawing.Point(12, 155);
+            resultsLabel.Name = "resultsLabel";
+            resultsLabel.Size = new System.Drawing.Size(98, 25);
+            resultsLabel.TabIndex = 23;
+            resultsLabel.Text = "Results:";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::arizonaTouristAttractionsFinal.Properties.Resources.Arizona_Map;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(724, 450);
+            this.ClientSize = new System.Drawing.Size(768, 450);
+            this.Controls.Add(resultsLabel);
+            this.Controls.Add(searchLabel);
             this.Controls.Add(this.showButton);
             this.Controls.Add(this.searchButton);
             this.Controls.Add(this.pictureBox1);
