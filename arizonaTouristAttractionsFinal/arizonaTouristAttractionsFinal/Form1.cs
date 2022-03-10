@@ -116,9 +116,19 @@ namespace arizonaTouristAttractionsFinal
             //resultsComboBox.Items.Clear();
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void resetViewButton_Click(object sender, EventArgs e)
         {
-
+            try
+            {
+                var contactDetails =
+                        from c in arizona1DataSet.arizonaLocation
+                        where c.locationName.Equals(c.locationName)
+                        select c;
+                arizonaLocationBindingSource.DataSource = contactDetails.AsDataView();
+                resultsComboBox.Items.Clear();
+                pictureChange();
+            }
+            catch { return; }
         }
     }
 }

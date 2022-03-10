@@ -37,9 +37,9 @@
             System.Windows.Forms.Label locationPictureLabel;
             System.Windows.Forms.Label locationLabel;
             System.Windows.Forms.Label descriptionLabel;
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             System.Windows.Forms.Label searchLabel;
             System.Windows.Forms.Label resultsLabel;
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.arizona1DataSet = new arizonaTouristAttractionsFinal.arizona1DataSet();
             this.arizonaLocationBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.arizonaLocationTableAdapter = new arizonaTouristAttractionsFinal.arizona1DataSetTableAdapters.arizonaLocationTableAdapter();
@@ -71,6 +71,7 @@
             this.searchButton = new System.Windows.Forms.Button();
             this.showButton = new System.Windows.Forms.Button();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.resetViewButton = new System.Windows.Forms.Button();
             locationNameLabel = new System.Windows.Forms.Label();
             countyLabel = new System.Windows.Forms.Label();
             cityLabel = new System.Windows.Forms.Label();
@@ -167,6 +168,26 @@
             descriptionLabel.Size = new System.Drawing.Size(138, 25);
             descriptionLabel.TabIndex = 15;
             descriptionLabel.Text = "Description:";
+            // 
+            // searchLabel
+            // 
+            searchLabel.AutoSize = true;
+            searchLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            searchLabel.Location = new System.Drawing.Point(12, 105);
+            searchLabel.Name = "searchLabel";
+            searchLabel.Size = new System.Drawing.Size(93, 25);
+            searchLabel.TabIndex = 22;
+            searchLabel.Text = "Search:";
+            // 
+            // resultsLabel
+            // 
+            resultsLabel.AutoSize = true;
+            resultsLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            resultsLabel.Location = new System.Drawing.Point(12, 155);
+            resultsLabel.Name = "resultsLabel";
+            resultsLabel.Size = new System.Drawing.Size(98, 25);
+            resultsLabel.TabIndex = 23;
+            resultsLabel.Text = "Results:";
             // 
             // arizona1DataSet
             // 
@@ -273,7 +294,6 @@
             // 
             this.bindingNavigatorPositionItem.AccessibleName = "Position";
             this.bindingNavigatorPositionItem.AutoSize = false;
-            this.bindingNavigatorPositionItem.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.bindingNavigatorPositionItem.Name = "bindingNavigatorPositionItem";
             this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(50, 23);
             this.bindingNavigatorPositionItem.Text = "0";
@@ -420,9 +440,10 @@
             // 
             // searchButton
             // 
+            this.searchButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.searchButton.Location = new System.Drawing.Point(12, 29);
             this.searchButton.Name = "searchButton";
-            this.searchButton.Size = new System.Drawing.Size(205, 43);
+            this.searchButton.Size = new System.Drawing.Size(138, 43);
             this.searchButton.TabIndex = 20;
             this.searchButton.Text = "Search";
             this.searchButton.UseVisualStyleBackColor = true;
@@ -430,9 +451,10 @@
             // 
             // showButton
             // 
-            this.showButton.Location = new System.Drawing.Point(223, 29);
+            this.showButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.showButton.Location = new System.Drawing.Point(156, 29);
             this.showButton.Name = "showButton";
-            this.showButton.Size = new System.Drawing.Size(203, 43);
+            this.showButton.Size = new System.Drawing.Size(138, 43);
             this.showButton.TabIndex = 21;
             this.showButton.Text = "Show";
             this.showButton.UseVisualStyleBackColor = true;
@@ -445,26 +467,16 @@
     "ctionsFinal\\Images";
             this.openFileDialog1.FileOk += new System.ComponentModel.CancelEventHandler(this.openFileDialog1_FileOk_1);
             // 
-            // searchLabel
+            // resetViewButton
             // 
-            searchLabel.AutoSize = true;
-            searchLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            searchLabel.Location = new System.Drawing.Point(12, 105);
-            searchLabel.Name = "searchLabel";
-            searchLabel.Size = new System.Drawing.Size(93, 25);
-            searchLabel.TabIndex = 22;
-            searchLabel.Text = "Search:";
-            searchLabel.Click += new System.EventHandler(this.label1_Click);
-            // 
-            // resultsLabel
-            // 
-            resultsLabel.AutoSize = true;
-            resultsLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            resultsLabel.Location = new System.Drawing.Point(12, 155);
-            resultsLabel.Name = "resultsLabel";
-            resultsLabel.Size = new System.Drawing.Size(98, 25);
-            resultsLabel.TabIndex = 23;
-            resultsLabel.Text = "Results:";
+            this.resetViewButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.resetViewButton.Location = new System.Drawing.Point(300, 29);
+            this.resetViewButton.Name = "resetViewButton";
+            this.resetViewButton.Size = new System.Drawing.Size(138, 43);
+            this.resetViewButton.TabIndex = 24;
+            this.resetViewButton.Text = "Reset View";
+            this.resetViewButton.UseVisualStyleBackColor = true;
+            this.resetViewButton.Click += new System.EventHandler(this.resetViewButton_Click);
             // 
             // Form1
             // 
@@ -473,6 +485,7 @@
             this.BackgroundImage = global::arizonaTouristAttractionsFinal.Properties.Resources.Arizona_Map;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(768, 450);
+            this.Controls.Add(this.resetViewButton);
             this.Controls.Add(resultsLabel);
             this.Controls.Add(searchLabel);
             this.Controls.Add(this.showButton);
@@ -547,6 +560,7 @@
         private System.Windows.Forms.Button searchButton;
         private System.Windows.Forms.Button showButton;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
+        private System.Windows.Forms.Button resetViewButton;
     }
 }
 
