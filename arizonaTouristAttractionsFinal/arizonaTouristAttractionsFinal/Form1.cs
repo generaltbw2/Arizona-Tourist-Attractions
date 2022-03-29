@@ -15,6 +15,7 @@ namespace arizonaTouristAttractionsFinal
     {
         public Form1()
         {
+            //Splashscreen
             Thread t = new Thread(new ThreadStart(StartForm));
             t.Start();
             Thread.Sleep(300);
@@ -23,6 +24,7 @@ namespace arizonaTouristAttractionsFinal
         }
         public void StartForm()
         {
+            //Splashscreen
             Application.Run(new Form2());
         }
 
@@ -41,6 +43,7 @@ namespace arizonaTouristAttractionsFinal
             pictureChange();
 
         }
+        //Sets the picture of the picturebox
         private void pictureChange()
         {
             if (System.IO.File.Exists(locationPictureTextBox.Text))
@@ -67,6 +70,7 @@ namespace arizonaTouristAttractionsFinal
             pictureChange();
         }
 
+        //Searches for different keywords through the database
         private void searchButton_Click(object sender, EventArgs e)
         {
             // connection string  
@@ -96,6 +100,7 @@ namespace arizonaTouristAttractionsFinal
             }
         }
 
+        //Shows the results for the search through the database
         private void showButton_Click(object sender, EventArgs e)
         {
             try
@@ -116,6 +121,7 @@ namespace arizonaTouristAttractionsFinal
             //resultsComboBox.Items.Clear();
         }
 
+        //Will reset the view of the database and show all records
         private void resetViewButton_Click(object sender, EventArgs e)
         {
             try
